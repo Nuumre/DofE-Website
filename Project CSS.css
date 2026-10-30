@@ -1,0 +1,176 @@
+body{
+    background-color: #f0f0f0;
+    background-origin: padding-box;
+    background-repeat: repeat;
+    background-size: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.header{
+    background-color: #ffffff;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    z-index: 1000;
+    justify-content: space-between;
+    border-bottom: 2px solid #000000;
+}
+h1{
+    font-family:serif ;
+    font-size: 20px;
+}
+.hcolor{
+    color: #000000;
+    text-decoration: none;
+}
+.footer1{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    height: 100px;
+}
+.footer2{
+    background:#ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    height: 50px;
+}
+.nav{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.align{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.scpic{
+    width: 30px;
+}
+h4{
+    padding-top: 60px;
+    text-align: center;
+    font-size: 50px;
+    font-family: serif;
+}
+h5{
+    text-align: center;
+    font-size: 40px;
+    font-family: serif;
+    font-weight: lighter;
+}
+h6{
+    font-size: medium;
+    text-align: center;
+}
+.length1{
+    width: 60%;
+    height: 2px;
+    background-color: #000000;
+    border: none;
+}
+.length2{
+    width: 40%;
+    height: 1px;
+    background-color: #8f8f8f;
+    border: none;
+}
+.event-label{
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+    display: inline-block;
+}
+.event-date{
+    color: #ff0000;
+    font-size: 18px;
+    font-weight: bold;
+}
+.event-name{
+    font-size: 20px;
+    font-weight: bold;
+}
+table{
+    width: 70%;
+    border-collapse: collapse;
+    justify-content: center;
+    align-items: center;
+}
+.profile{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: left;
+}
+.music-cover{
+    width: 70%;
+    padding-top: 80px;
+    object-fit: cover;
+    height: auto;
+}
+.music-title{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial;
+}
+  /*Энээс хойш хийсэн код интернэтээс авсан шүү*/
+.split-image-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+.quadrant{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-image: url("FujiiKaze_20250226_PRphoto_fix-scaled.jpg");
+    background-size: 500px 500px;
+    transition: transform 0.3s ease;
+}  
+.quadrant-1{
+    top: 0;
+    left: 0;
+    background-position: top left;
+}  
+.quadrant-2{
+    top: 0;
+    right: 0;
+    background-position: top right;
+}  
+.quadrant-3{
+    bottom: 0;
+    left: 0;
+    background-position: bottom left;
+}  
+.quadrant-4{
+    bottom: 0;
+    right: 0;
+    background-position: bottom right;
+}  
+.split-image-container:hover .quadrant-1{
+    transform: translate(-10px, -10px);
+}  
+.split-image-container:hover .quadrant-2 {
+    transform: translate(10px, -10px);
+}  
+.split-image-container:hover .quadrant-3 {
+    transform: translate(-10px, 10px);
+}
+.split-image-container:hover .quadrant-4 {
+    transform: translate(10px, 10px);
+}
